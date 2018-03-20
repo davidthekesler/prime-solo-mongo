@@ -1,1 +1,20 @@
 
+//1
+
+db.createCollection('orders');
+
+//2
+
+db.orders.insert({orderDate: new Date('2017-01-02')})
+
+//3
+
+db.orders.find().pretty();
+
+//4
+
+db.orders.find({orderDate: {$gt: new Date('1/31/2017')}})
+
+//5
+
+`
