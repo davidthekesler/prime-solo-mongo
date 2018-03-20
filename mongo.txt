@@ -17,4 +17,4 @@ db.orders.find({orderDate: {$gt: new Date('1/31/2017')}})
 
 //5
 
-`
+db.orders.update({orderDate: ISODate('2017-02-03')}, {orderTotal: 63.00});
